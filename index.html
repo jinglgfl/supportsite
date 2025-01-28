@@ -58,10 +58,9 @@ a.text-decoration-none.text-reset:hover .card {
 
 
 .blog-slider__img {
-  width: 300px;
+  width: 250px;
   flex-shrink: 0;
-  height: 300px;
-  box-shadow: 4px 13px 15px 1px rgba(252, 56, 56, 0.2);
+  height: 250px;
   border-radius: 20px;
   transform: translateX(-80px);
   overflow: hidden;
@@ -71,10 +70,9 @@ a.text-decoration-none.text-reset:hover .card {
 
 
 .blog-slider__img1 {
-  width: 300px;
+  width: 250px;
   flex-shrink: 0;
-  height: 300px;
-  box-shadow: 4px 13px 15px 1px rgba(252, 56, 56, 0.2);
+  height: 250px;
   border-radius: 20px;
   transform: translateX(80px);
   overflow: hidden;
@@ -97,14 +95,27 @@ a.text-decoration-none.text-reset:hover .card {
   border-radius: 20px;
 }
 
+
+
+
 .blog-slider__content {
-  padding-right: 25px;
+   transform: translateX(-40px);
 }
 
 .blog-slider__content1 {
-  padding-left: 25px;
+  
+  transform: translateX(40px);
 }
 
+
+@media (max-width: 991px) {
+  .blog-slider__content, .blog-slider__content1 {
+    transform: translateX(0px);
+    padding-left:unset;
+    padding-right:unset;
+    text-align: center;
+    }
+}
 
 
 .blog-slider__text {
@@ -123,6 +134,7 @@ a.text-decoration-none.text-reset:hover .card {
   text-align: center;
   letter-spacing: 2px;
 }
+
 
       
     </style>
@@ -596,16 +608,16 @@ a.text-decoration-none.text-reset:hover .card {
         <div class="blog-slider card shadow-sm h-100 d-flex flex-column">
             <div class="blog-slider__wrp swiper-wrapper">
                 <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img d-none d-lg-block">
-                        <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="">
+                    <div class="blog-slider__img d-none d-lg-block shadow-lg">
+                        <img src="images\savingscalc.png" alt="">
                     </div>
                     <div class="blog-slider__content">
                         <h4>Savings</h4>
-                        <div class="blog-slider__text">Find out how much you can / are saving with LGfL SuperCloud.</div>
+                        <div class="blog-slider__text">Discover how much you can save with LGfL SuperCloud. Thanks to LGfL's powerful aggregated buying power, we offer exceptional savings and bundle in significant additional value, helping schools save thousands of pounds annually!</div>
                     </div>
                 </div>
             </div>
-            <a href="#" style="margin-top:25px" class="blog-slider__button">Try Our Savings Calculator</a>
+            <a href="https://members.lgfl.net/savings-calculator" target="_blank" class="blog-slider__button mt-xl-auto mt-4 ">Try Our Savings Calculator</a>
         </div>
     </div>
     <div class="col-12 col-xl-5 d-flex mt-4 mt-xl-0">
@@ -614,14 +626,14 @@ a.text-decoration-none.text-reset:hover .card {
                 <div class="blog-slider__item swiper-slide">
                     <div class="blog-slider__content1">
                         <h4>A to Z of LGfL Services</h4>
-                        <div class="blog-slider__text">See our range of Services and Platforms that are Specifically & Uniquely Engineered for Education.</div>
+                        <div class="blog-slider__text">Explore our extensive range of services and platforms, specifically designed and uniquely engineered to meet the needs of education. From ultra-fast, secure internet connectivity with LGfL broadband to advanced cybersecurity features like CyberCloud, we ensure schools, MATs, and Local Authorities stay safe and connected. </div>
                     </div>
-                    <div class="blog-slider__img1 d-none d-lg-block">
-                        <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="">
+                    <div class="blog-slider__img1 d-none d-lg-block shadow-lg">
+                        <img src="images\atoz.png" alt="">
                     </div>
                 </div>
             </div>
-            <a href="#" style="margin-top:25px" class="blog-slider__button">View Everything Included</a>
+            <a href="https://lgfl.net/services/all-services" target="_blank" class="blog-slider__button mt-4">View Everything Included</a>
         </div>
     </div>
 </div>
