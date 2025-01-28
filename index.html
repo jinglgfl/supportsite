@@ -198,35 +198,78 @@ a.text-decoration-none.text-reset:hover .card {
 <div class="py-3 mx-3">
  
 
-    <div class="row mx-auto" style="max-width: 1600px;">
-        <div class="col-md-4 col-lg-3 mb-3">
-          <label for="dropdown1" class="form-label">Authority/Group</label>
-          <select class="form-select" id="dropdown1">
-            <option selected>LGfL Trust</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-        </div> 
-        <div class="col-md-4 col-lg-3 mb-3">
-          <label for="dropdown2" class="form-label">Establishment</label>
-          <select class="form-select" id="dropdown2">
-            <option selected>London Grid for Learning</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-        </div>
-        <div class="col-md-4 col-lg-3 mb-3">
-          <label for="dropdown3" class="form-label">Site</label>
-          <select class="form-select" id="dropdown3">
-            <option selected>Site B</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-        </div>
-        </div>
+<button class="g-3 btn btn-primary d-md-none mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" style="margin-left:0.75rem">
+  Change Establishment
+</button>
+
+
+<!-- Original dropdowns visible on medium screens and up -->
+<div class="row mx-auto d-none d-md-flex" style="max-width: 1600px;">
+  <div class="col-md-4 col-lg-3 mb-3">
+    <label for="dropdown1" class="form-label">Authority/Group</label>
+    <select class="form-select" id="dropdown1" name="authority">
+      <option selected>LGfL Trust</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+  <div class="col-md-4 col-lg-3 mb-3">
+    <label for="dropdown2" class="form-label">Establishment</label>
+    <select class="form-select" id="dropdown2" name="establishment">
+      <option selected>London Grid for Learning</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+  <div class="col-md-4 col-lg-3 mb-3">
+    <label for="dropdown3" class="form-label">Site</label>
+    <select class="form-select" id="dropdown3" name="site">
+      <option selected>Site B</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</div>
+
+<!-- Offcanvas for mobile -->
+<div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="filterOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Filters</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="mb-3">
+      <label for="dropdown1Mobile" class="form-label">Authority/Group</label>
+      <select class="form-select" id="dropdown1Mobile" name="authority">
+        <option selected>LGfL Trust</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="dropdown2Mobile" class="form-label">Establishment</label>
+      <select class="form-select" id="dropdown2Mobile" name="establishment">
+        <option selected>London Grid for Learning</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="dropdown3Mobile" class="form-label">Site</label>
+      <select class="form-select" id="dropdown3Mobile" name="site">
+        <option selected>Site B</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+</div>
 
 <div class="row mx-auto" style="max-width: 1600px;">
   
@@ -403,7 +446,37 @@ a.text-decoration-none.text-reset:hover .card {
             <h5>Status</h5>
             <div class="container-xl">
                 <div class="row">
-                   
+                  <div class="py-4 col-12 card d-flex justify-content-center" style="background-color: #fafafa;">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h6 class="d-block mb-0">London Grid for Learning (998-0000) Site B</h6>
+                    </div>
+                </div>
+                
+                
+                  <div class="py-4 col-6 col-lg-12 card">
+                    <div class="row align-items-center">
+                      <div class="col-3 justify-content-center d-none d-lg-flex">
+                        <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Icon" class="img-fluid" style="max-width: 40px;">
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <span class="d-block"><strong>Open Announcements:</strong> 2</span>
+                   <a href="/secure/support/support_issues.aspx" target="_blank" class="d-block">View Announcements</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-4 col-6 col-lg-12 card">
+                    <div class="row align-items-center">
+                      <div class="col-3 justify-content-center d-none d-lg-flex">
+                        <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Icon" class="img-fluid" style="max-width: 40px;">
+                      </div>
+                      <div class="col-12 col-lg-9">
+                        <span class="d-block"><strong>Open Support Cases:</strong> 3</span>
+                        <a href="/secure/support/support_issues.aspx" target="_blank" class="d-block">View Cases</a>
+                      </div>
+                    </div>
+                  </div> 
+
+
                   <div class="py-4 col-6 col-lg-12 card">
                     <div class="row align-items-center">
                       <div class="col-3 justify-content-center d-none d-lg-flex">
