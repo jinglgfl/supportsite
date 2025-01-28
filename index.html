@@ -28,7 +28,13 @@ a.text-decoration-none.text-reset:hover .card {
   transform: translateY(-5px);
 }
 
-.nav-link {color: white;}
+.nav-link,
+.nav-link:focus
+{color: white;}
+
+.nav-link:hover
+{color: rgb(213, 44, 44);}
+
 
 
 
@@ -122,16 +128,17 @@ a.text-decoration-none.text-reset:hover .card {
     </style>
 </head>
 
-<nav class="navbar navbar-expand-lg" style="background-color: #000;">
-  <div class="container-fluid d-flex align-items-center justify-content-between">
 
-    <a class="navbar-brand" href="#">
-      <img src="https://lgfl.net/sites/default/files/upload/2023-03/lgfl-logo-small.png" alt="Logo">
+
+<nav class="navbar navbar-expand bg-dark d-sm-block" style="background-color: #000;">
+  <div class="container-fluid d-flex justify-content-between">
+    
+    <a class="navbar-brand mx-auto d-none d-lg-block" href="https://www.lgfl.net" target="_blank"> 
+      <img src="https://lgfl.net/sites/default/files/upload/2023-03/lgfl-logo-small.png" alt="Logo" style="width:140px;">
     </a>
 
-    <!-- Navbar content (centered) -->
-    <div class="collapse navbar-collapse w-100 d-flex justify-content-center" id="navbarText" style="margin-right:200px;">
-      <ul class="navbar-nav mb-2 mb-lg-0" style="color: white;">
+    <div class="w-100 justify-content-center d-none d-lg-flex" id="navbarText" style="margin-right:140px;">
+      <ul class="navbar-nav mb-0" style="font-family: Arial">
         <li class="nav-item">
           <a class="nav-link" href="https://lgfl.net/smartbuy/connectivity" target="_blank">Connectivity</a>
         </li>
@@ -156,20 +163,25 @@ a.text-decoration-none.text-reset:hover .card {
       </ul>
     </div>
 
+    <a class="navbar-brand mx-auto d-block d-lg-none" href="https://www.lgfl.net" target="_blank"> 
+      <img src="https://lgfl.net/sites/default/files/upload/2023-03/lgfl-logo-small.png" alt="Logo" style="width:140px;">
+    </a>
+    
   </div>
 </nav>
 
 
 
 
-
 <body style="background-image: linear-gradient(to bottom right, #fff, #f9f9f9);">
+  <div style="max-width: 100%; overflow-x: auto;">
+    <img src="https://my.uso.im/drive/StorageLinkHandler.ashx/image?hash=08619bd962034239960b9a427d9d4457" alt="Logo" class="d-block mx-auto mt-2">
+</div>
 
-<div class="py-4 my-4">
-    
-    <header class="mb-4 text-center">
-        <h1>LGfL Dashboard</h1>
-    </header>
+
+
+<div class="py-3 mx-3">
+ 
 
     <div class="row mx-auto" style="max-width: 1600px;">
         <div class="col-md-4 col-lg-3 mb-3">
@@ -614,13 +626,10 @@ a.text-decoration-none.text-reset:hover .card {
     </div>
 </div>
 
- 
+ <br><br><br>
 
 
-<br><br><br>
 
-
-   
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
