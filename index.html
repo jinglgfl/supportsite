@@ -198,12 +198,8 @@ a.text-decoration-none.text-reset:hover .card {
 <div class="py-3 mx-3">
  
 
-<button class="g-3 btn btn-sm btn-dark d-md-none mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" style="margin-left:0.75rem">
-  Change Establishment
-</button>
 
-
-<!-- Original dropdowns visible on medium screens and up -->
+<!-- Dropdowns visible on medium screens and up -->
 <div class="row mx-auto d-none d-md-flex" style="max-width: 1500px;">
   <div class="col-md-4 col-lg-3 mb-3">
     <label for="dropdown1" class="form-label">Authority/Group</label>
@@ -237,7 +233,7 @@ a.text-decoration-none.text-reset:hover .card {
 <!-- Offcanvas for mobile -->
 <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="filterOffcanvas">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Filters</h5>
+    <h5 class="offcanvas-title">Change Establishment</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -446,10 +442,13 @@ a.text-decoration-none.text-reset:hover .card {
             <h5>Status</h5>
             <div class="container-xl">
                 <div class="row">
-                  <div class="py-4 col-12 card d-flex justify-content-center" style="background-color: #fafafa;">
-                    <div class="col-12 d-flex justify-content-center">
+                  <div class="py-4 col-12 card d-flex" style="background-color: #fafafa;">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                         <h6 class="d-block mb-0">London Grid for Learning (998-0000) Site B</h6>
-                    </div>
+                        <button class="btn btn-sm btn-dark d-md-none mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas" style="margin-left:0.75rem">
+                          Change Establishment
+                        </button>
+                   </div>
                 </div>
                 
                 
