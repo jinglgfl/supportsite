@@ -15,12 +15,20 @@
       border-radius: 0;
     }
 
-    .card {
-      transition: transform 0.3s ease;
+   
+
+    a.text-decoration-none.text-reset:hover > .card {
+    transform: translateY(-5px);
     }
 
-    a.text-decoration-none.text-reset:hover .card {
-      transform: translateY(-8px);
+    .card {
+    transition: transform 0.5s ease-in-out; 
+    }
+
+    @media (max-width: 991px) {
+    a.text-decoration-none.text-reset:hover > .card {
+      transform: none;
+    }
     }
 
     .savings-and-atoz-cards {
@@ -63,14 +71,11 @@
       color: rgb(213, 44, 44);
     }
 
-
     .form-select:focus {
     border-color: rgb(213, 140, 140);
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(213, 140, 140, .25);
-}
-
-
+  }
 
 
   </style>
@@ -103,7 +108,7 @@
           <a class="nav-link" href="https://lgfl.net/home/about-us" target="_blank">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://helpdesk.lgfl.net" target="_blank">User Guide</a>
+          <a class="nav-link" href="/secure/guide/WebGuide/Help.html">User Guide</a>
         </li>
       </ul>
     </div>
