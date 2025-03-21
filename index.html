@@ -104,7 +104,19 @@
     }
     }
 
- 
+    .coming-soon-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    cursor: not-allowed;
+  }
+  .position-relative:hover .coming-soon-overlay {
+    opacity: 1;
+  }
+
+  a.no-hover:hover > .card {
+  transform: none !important; 
+}
   </style>
 </head>
 
@@ -113,7 +125,7 @@
     <a class="navbar-brand mx-auto ms-md-0" href="/secure/default.aspx">
       <img src="images/lgfl-logo-small.png" alt="LGfL Logo" style="width:140px;">
     </a>
-    <div class="w-100 justify-content-center d-none d-lg-flex" id="navbarText" style="">
+    <div class="w-100 justify-content-center d-none d-lg-flex" id="navbarText">
       <ul class="navbar-nav mb-0" style="font-family: Arial">
         <li class="nav-item">
           <a class="nav-link" href="https://lgfl.net/smartbuy/connectivity" target="_blank">Connectivity</a>
@@ -148,7 +160,7 @@
     <img src="images/supportsitenav.png" alt="Logo"
       class="d-block mx-auto mt-2">
   </div>
-  <div class="py-3 mx-3">
+  <div class="pt-3 mx-3">
     <!-- Dropdowns visible on medium screens and up -->
     <div class="row mx-auto d-none d-md-flex" style="max-width: 1500px;">
       <div class="col-md-4 col-lg-3 mb-3">
@@ -224,7 +236,7 @@
 
         <div class="row row-cols-3 g-3 text-center mb-3">
           <div class="col">
-            <a href="#licences" class="text-decoration-none text-reset">
+            <a href="https://lgfl.net/about/licences" class="text-decoration-none text-reset" target="_blank">
               <div class="card shadow-sm h-100" style="background-color:#fafafa;">
                 <div class="card-body d-flex align-items-center justify-content-center p-2">
                   <h6 class="mb-0">Claim Free LGfL Premium Resources</h6>
@@ -236,7 +248,7 @@
             <a href="https://members.lgfl.net/savings-calculator" class="text-decoration-none text-reset" target="_blank">
               <div class="card shadow-sm h-100" style="background-color: #fafafa;">
                 <div class="card-body d-flex align-items-center justify-content-center p-2">
-                  <h6 class="mb-0">Check Your LGfL Savings</h6>
+                  <h6 class="mb-0">LGfL Savings and Benefits Tracker</h6>
                 </div>
               </div>
             </a>
@@ -354,6 +366,22 @@
             </a>
           </div>
           <div class="col">
+            <div class="position-relative h-100">
+              <a href="#" class="text-decoration-none text-reset no-hover">
+                <div class="card shadow-sm h-100">
+                  <img src="images/firewallrules.png" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <h6 class="mb-0">Update Firewall Rules</h6>
+                  </div>
+                </div>
+              </a>
+              <div class="coming-soon-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                <span class="text-white bg-dark px-3 py-1 rounded">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
             <a href="https://www.lgfl.net" class="text-decoration-none text-reset" target="_blank">
               <div class="card shadow-sm h-100">
                 <img src="images/firewallmot.webp" class="card-img-top img-fluid" alt="...">
@@ -363,6 +391,7 @@
               </div>
             </a>
           </div>
+         
           <div class="col">
             <a href="/secure/myacc/lgfl/lgfl2_deploy.aspx?tab=4" class="text-decoration-none text-reset">
               <div class="card shadow-sm h-100">
@@ -384,21 +413,21 @@
             </a>
           </div>
           <div class="col">
-            <a href="/secure/email/lgfl/mailadmin.aspx" class="text-decoration-none text-reset">
-              <div class="card shadow-sm h-100">
-                <img src="images/staffmail.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Review StaffMail Accounts</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col">
             <a href="/secure/user/au/pwd_policies.aspx" class="text-decoration-none text-reset">
               <div class="card shadow-sm h-100">
                 <img src="images/password.webp" class="card-img-top img-fluid" alt="...">
                 <div class="card-body d-flex align-items-center justify-content-center">
                   <h6 class="mb-0">Adjust Password Policies</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="/secure/email/lgfl/mailadmin.aspx" class="text-decoration-none text-reset">
+              <div class="card shadow-sm h-100">
+                <img src="images/staffmail.webp" class="card-img-top img-fluid" alt="...">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <h6 class="mb-0">Review StaffMail Accounts</h6>
                 </div>
               </div>
             </a>
@@ -428,7 +457,7 @@
               <div class="card shadow-sm h-100">
                 <img src="images/traininglrc.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Request a Free Training Session From Your LRC</h6>
+                  <h6 class="mb-0">Request a Free Training Session From Your Learning Resource Consultant</h6>
                 </div>
               </div>
             </a>
@@ -438,7 +467,7 @@
               <div class="card shadow-sm h-100">
                 <img src="images/freetraining.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Explore Our Free Training</h6>
+                  <h6 class="mb-0">Explore LGfL CPD and Training</h6>
                 </div>
               </div>
             </a>
@@ -448,7 +477,37 @@
               <div class="card shadow-sm h-100">
                 <img src="images/learningresources.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Explore Our Free Open-Access Resources</h6>
+                  <h6 class="mb-0">Explore Our Free Open Access Learning Resources</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://lgfl.net/home/latest-newsletters" class="text-decoration-none text-reset" target="_blank">
+              <div class="card shadow-sm h-100">
+                <img src="images/newsletters.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <h6 class="mb-0">Sign Up to LGfL Newsletters</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://lgfl.net/Roadmap" class="text-decoration-none text-reset" target="_blank">
+              <div class="card shadow-sm h-100">
+                <img src="images/productupdates.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <h6 class="mb-0">View LGfL Product Updates & Roadmaps</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://pps.lgfl.org.uk" class="text-decoration-none text-reset" target="_blank">
+              <div class="card shadow-sm h-100">
+                <img src="images/fsmchecker.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <h6 class="mb-0">View LGfL FSM Checker</h6>
                 </div>
               </div>
             </a>
@@ -596,20 +655,6 @@
                 </div>
               </div>
             </div>
-            <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
-              <div class="row align-items-center">
-                <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
-                  <img src="images/autoupdate.png" alt="Icon" class="img-fluid" style="max-height: 40px;">
-                </div>
-                <div class="col-12 col-lg-9 lh-sm">
-                  <span class="d-block"><strong>MIS:</strong> Arbor</span>
-                  <span class="d-block"><strong>Last Sync from MIS:</strong> 21/11/24 13:10</span>
-                  <span class="d-block"><strong>Last Change Processed:</strong> 14/11/24 23:42</span>
-                  <span class="d-block"><strong>Unmatched USO Accounts:</strong> 25</span>
-                  <a href="/secure/user/au/au_settings.aspx" class="link-dark">Manage AutoUpdate</a>
-                </div>
-              </div>
-            </div>
             <div class="py-2 py-sm-3  col-12 col-sm-6 col-md-6 col-lg-12 card">
               <div class="row align-items-center">
                 <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
@@ -617,8 +662,34 @@
                 </div>
                 <div class="col-12 col-lg-9 lh-sm">
                   <span class="d-block"><strong>Total USO Accounts:</strong> 650</span>
-                  <span class="d-block"><strong>Manual USO Accounts:</strong> 7</span>
+                  <span class="d-block"><strong>Non MIS USO Accounts:</strong> 7</span>
                   <a href="/secure/user/nc/user_report.aspx?rtype=23" class="link-dark">Review USO Accounts</a>
+                </div>
+              </div>
+            </div>
+            <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
+                  <img src="images/autoupdate.png" alt="Icon" class="img-fluid" style="max-height: 40px;">
+                </div>
+                <div class="col-12 col-lg-9 lh-sm">
+                  <span class="d-block"><strong>MIS:</strong> Arbor</span>
+                  <span class="d-block"><strong>Last MIS-USO Sync:</strong> 21/11/24 13:10</span>
+                  <span class="d-block"><strong>Last Change Processed:</strong> 14/11/24 23:42</span>
+                  <span class="d-block"><strong>Unmatched USO Accounts:</strong> 25</span>
+                  <a href="/secure/user/au/au_settings.aspx" class="link-dark">Manage AutoUpdate</a>
+                </div>
+              </div>
+            </div>
+            <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
+                  <img src="images/usosync.png" alt="Icon" class="img-fluid" style="max-height: 40px;">
+                </div>
+                <div class="col-12 col-lg-9 lh-sm">
+                  <span class="d-block"><strong>Last USO Sync to Google:</strong> 10/09/24 10:20</span>
+                  <span class="d-block"><strong>Last USO Sync to Microsoft:</strong> 10/01/24 18:15</span>
+                  <a href="https://helpdesk.lgfl.net/support/solutions/articles/54000014618" target="_blank" class="link-dark">View Sync Information</a>
                 </div>
               </div>
             </div>
@@ -646,174 +717,25 @@
                 </div>
               </div>
             </div>
-            <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
-              <div class="row align-items-center">
-                <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
-                  <img src="images/usosync.png" alt="Icon" class="img-fluid" style="max-height: 40px;">
-                </div>
-                <div class="col-12 col-lg-9 lh-sm">
-                  <span class="d-block"><strong>Last USO Sync to Google:</strong> 10/09/24 10:20</span>
-                  <span class="d-block"><strong>Last USO Sync to Microsoft:</strong> 10/01/24 18:15</span>
-                  <a href="https://helpdesk.lgfl.net/support/solutions/articles/54000014618" target="_blank" class="link-dark">View Sync Information</a>
-                </div>
-              </div>
-            </div>
+        
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="my-4 py-4" id="licences" style="background-color:#D9D9D9;">
-    <div class="row mx-auto g-4" style="max-width:1200px;">
-      <div class="col-12 col-lg-4">
-        <a href="https://lgfl.net/about/licences" class="text-decoration-none text-reset" target="_blank">
-          <div class="card h-100">
-            <img src="images/licences.webp" class="card-img-top d-none d-lg-block img-fluid" alt="...">
-            <div class="card-body" style="background-color: #fafafa;">
-              <h4 class="">Claim Free LGfL Premium Resources</h4>
-              <p class="mb-0">Find and claim all the resources that are included in your LGfL SuperCloud subscription.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-lg-8 mt-3 mt-lg-4">
-        <div class="row g-3 text-center">
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/safeguarding/monitoring" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/sensosafeguarding.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Senso Pupil Monitoring</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/services/security/sophos-intercept-x" class="text-decoration-none text-reset"
-              target="_blank">
-              <div class="card h-100">
-                <img src="images/sophos.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Sophos</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/security/threatdown" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/threatdown.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Threatdown</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/smartbuy/adobe-creative-cloud" class="text-decoration-none text-reset"
-              target="_blank">
-              <div class="card h-100">
-                <img src="images/adobe.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Adobe</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/smartbuy/buymeraki" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/meraki.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Meraki</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/services/egress" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/egress.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Egress Secure Transfer</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://gridstore.lgfl.net" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/gridstore.webp" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">GridStore Cloud Backup</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/services/BusyThings" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/busythings2.png" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Busy Things</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-md-4">
-            <a href="https://lgfl.net/services/j2e" class="text-decoration-none text-reset" target="_blank">
-              <div class="card h-100">
-                <img src="images/j2e2.png" class="card-img-top img-fluid" alt="...">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">J2e</h6>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="row mx-auto py-4">
-    <div class="col-12 col-xl-5 d-flex mb-3 mb-xl-0 offset-xl-1" id="savings">
-      <div class="savings-and-atoz-cards card shadow-sm h-100 d-flex flex-column">
-        <div class="d-flex align-items-center">
-          <div class="savings-and-atoz-cards-img d-none d-lg-block shadow-lg rounded-5" style="transform: translateX(-80px)">
-            <img class="w-100 h-100 rounded-5" src="images/savingscalc.webp" alt="" style="border: 2px solid #ddd">
-          </div>
-          <div class="savings-card-content">
-            <h4>Savings</h4>
-            <div style="color: #4e4a67;">
-              Discover how much you can save with LGfL SuperCloud. Thanks to LGfL's powerful aggregated buying power, we offer exceptional savings and bundle in significant additional value, helping schools save thousands of pounds annually!
-            </div>
-          </div>
-        </div>
-        <a href="https://members.lgfl.net/savings-calculator" target="_blank" class="btn btn-lg btn-dark mt-xl-auto mt-3">Try Our Savings Calculator</a>
-      </div>
-    </div>
-    
-    <div class="col-12 col-xl-5 d-flex mt-3 mt-xl-0" id="atoz">
-      <div class="savings-and-atoz-cards card shadow-sm h-100 d-flex flex-column">
-        <div class="d-flex align-items-center">
-          <div class="atoz-card-content">
-            <h4>A to Z of LGfL Services</h4>
-            <div style="color: #4e4a67;">
-              Explore our extensive range of services and platforms, specifically designed and uniquely engineered to meet the needs of education. From ultra-fast, secure internet connectivity with LGfL broadband to advanced cybersecurity features like CyberCloud.
-            </div>
-          </div>
-          <div class="savings-and-atoz-cards-img d-none d-lg-block shadow-lg rounded-5" style="transform: translateX(80px)">
-            <img class="w-100 h-100 rounded-5" src="images/atoz.webp" alt="" style="border: 2px solid #ddd">
-          </div>
-        </div>
-        <a href="https://lgfl.net/services/all-services" target="_blank" class="btn btn-lg btn-dark mt-3">View Everything Included</a>
-      </div>
+
+<div class="d-flex justify-content-center mx-2 my-3">
+  <div class="card">
+    <div style="background-color: rgb(213, 44, 44); max-width: 1500px;" class="text-white text-center py-3 px-3 rounded">
+        <p class="mb-0 fw-bold">
+          LGfL SUPERCLOUD – Fast, Safe <span class="fw-semibold">and</span> Secure <span class="fw-semibold">Broadband & Cloud Services that Deliver Outstanding</span> Value for Money!
+        </p>
     </div>
   </div>
-  
-  <br>
+</div>
+
   <div style="border-top:1px solid black; margin:6px auto; padding-top:2px;">
     <center>
       <table cellpadding="1" cellspacing="6" border="0">
@@ -821,7 +743,7 @@
           <tr>
             <td align="left" valign="middle">
               <span id="ctl00_lblOperatedBy1"
-                style="font-family:Verdana;font-size:10pt;font-weight:bold;font-style:italic;">This service is provided by </span> 
+                style="font-family:Verdana;font-size:10pt;font-weight:bold;font-style:italic;">This support site is provided by </span> 
               </td>
             <td align="left" valign="middle">
               <a id="ctl00_hypAtom" href="https://www.wavenet.co.uk/education"
