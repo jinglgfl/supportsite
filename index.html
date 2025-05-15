@@ -95,8 +95,13 @@
     <a class="navbar-brand mx-auto ms-md-0" href="/secure/default.aspx">
       <img src="images/lgfl-logo-small.png" alt="LGfL Logo" style="width:140px;">
     </a>
+   <button class="btn btn-sm btn-primary ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#alertsBox" aria-expanded="false" aria-controls="alertsBox">
+  Demo Alerts
+</button>
     <div class="w-100 justify-content-center d-none d-lg-flex" id="navbarText">
+      
       <ul class="navbar-nav mb-0" style="font-family: Arial">
+          
         <li class="nav-item">
           <a class="nav-link" href="https://lgfl.net/smartbuy/connectivity" target="_blank">Connectivity</a>
         </li>
@@ -130,6 +135,9 @@
     <img src="images/supportsitenav.png" alt="Nav"
       class="d-block mx-auto mt-2">
   </div>
+
+ 
+
   <div class="pt-3 mx-3">
     <!-- Dropdowns visible on medium screens and up -->
     <div class="row mx-auto d-none d-md-flex" style="max-width: 1500px;">
@@ -198,6 +206,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="row mx-auto" style="max-width: 1500px;">
       <div class="col-12 col-lg-7 col-xl-8" id="quicklinks">
@@ -275,6 +284,17 @@
     </div>
   </a>
 </div>
+  
+          <div class="col">
+            <a href="/secure/email/lgfl/mailadmin.aspx" class="text-decoration-none text-reset">
+              <div class="card shadow-sm h-100">
+                <img src="images/staffmail.webp" class="card-img-top img-fluid" alt="Review StaffMail Accounts Icon">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <h6 class="mb-0">Review StaffMail Accounts</h6>
+                </div>
+              </div>
+            </a>
+          </div>
 
 
           <div class="col">
@@ -295,7 +315,7 @@
           <div class="col">
   <a href="#" class="text-decoration-none text-reset" data-bs-toggle="modal" data-bs-target="#FilteringModal">
     <div class="card shadow-sm h-100">
-      <img src="images/webfiltering.webp" class="card-img-top img-fluid" alt="Manage SchoolProtect Filtering Icon">
+      <img src="images/internetuse.webp" class="card-img-top img-fluid" alt="Manage SchoolProtect Filtering Icon">
       <div class="card-body d-flex align-items-center justify-content-center">
         <h6 class="mb-0">Review Filtering & Safe-Tech</h6>
       </div>
@@ -321,7 +341,7 @@
     <div class="card shadow-sm h-100">
       <img src="images/firewall.webp" class="card-img-top img-fluid" alt="Manage SchoolProtect Filtering Icon">
       <div class="card-body d-flex align-items-center justify-content-center">
-        <h6 class="mb-0">Review Network Configuration</h6>
+        <h6 class="mb-0">Review Network, Firewall & Mail Relay Configuration</h6>
       </div>
     </div>
   </a>
@@ -331,24 +351,14 @@
               <div class="card shadow-sm h-100">
                 <img src="images/gridstore.png" class="card-img-top img-fluid" alt="GridStore Icon">
                 <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Sign Up for GridStore</h6>
+                  <h6 class="mb-0">Discover GridStore</h6>
                 </div>
               </div>
             </a>
           </div>
               
   
-          
-          <div class="col">
-            <a href="/secure/email/lgfl/mailadmin.aspx" class="text-decoration-none text-reset">
-              <div class="card shadow-sm h-100">
-                <img src="images/staffmail.webp" class="card-img-top img-fluid" alt="Review StaffMail Accounts Icon">
-                <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Review StaffMail Accounts</h6>
-                </div>
-              </div>
-            </a>
-          </div>
+        
           <div class="col">
             <div class="position-relative h-100">
               <a href="#" class="text-decoration-none text-reset no-hover">
@@ -365,22 +375,24 @@
             </div>
           </div>
         
+
+
           <div class="col">
-            <a href="https://training.lgfl.net" class="text-decoration-none text-reset" target="_blank">
+            <a href="#" class="text-decoration-none text-reset" data-bs-toggle="modal" data-bs-target="#TrainingModal">
               <div class="card shadow-sm h-100">
                 <img src="images/freetraining.webp" class="card-img-top img-fluid" alt="Explore LGfL CPD and Training Icon">
                 <div class="card-body d-flex align-items-center justify-content-center">
-                  <h6 class="mb-0">Explore LGfL CPD and Training</h6>
+                  <h6 class="mb-0">Explore LGfL CPD & Training</h6>
                 </div>
               </div>
             </a>
           </div>
                 <div class="col">
-  <a href="#" class="text-decoration-none text-reset" data-bs-toggle="modal" data-bs-target="#LearningResourcesModal">
+  <a href="https://content.lgfl.net" class="text-decoration-none text-reset" target="_blank">
     <div class="card shadow-sm h-100">
       <img src="images/learningresources.webp" class="card-img-top img-fluid" alt="Manage SchoolProtect Filtering Icon">
       <div class="card-body d-flex align-items-center justify-content-center">
-        <h6 class="mb-0">Explore Learning Resources</h6>
+        <h6 class="mb-0">Explore Our Teaching & Learning Resources</h6>
       </div>
     </div>
   </a>
@@ -545,23 +557,27 @@
                   <span class="d-block"><strong>Firewall Model:</strong> Cisco FTD 1120</span>
                   <span class="d-block"><strong>Router Model:</strong> Cisco ISR 4431</span>
                   <span class="d-block"><strong>Public IP:</strong> 5.150.103.170</span>
+                  <span class="d-block"><strong>Public Mapped IPs:</strong> 4</span>
                   <a href="/secure/myacc/lgfl/lgfl2_deploy.aspx?tab=5" class="link-dark">View Connection Information</a>
                 </div>
               </div>
-            </div>
-                 <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
-              <div class="row align-items-center">
-                <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
-                  <img src="images/mip2.png" alt="MIP Icon" class="img-fluid" style="max-height: 40px;">
-                </div>
-               <div class="col-12 col-lg-9 lh-sm">
-                <span class="d-block"><strong>Public Mapped IPs:</strong> 4</span>
-                <span class="d-block"><strong>Accessible from Anywhere:</strong> 2</span>
-                <a href="/secure/myacc/lgfl/lgfl2_deploy.aspx?tab=4" class="link-dark">View Details</a>
-              </div>
+ <div class="collapse" id="alertsBox">
+  <div class="alert alert-warning fade show mt-2 mb-0 p-2 d-flex align-items-center small fw-normal lh-sm" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" fill="#b8860b" class="bi bi-exclamation-triangle me-2" viewBox="0 0 16 16">
+      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"></path>
+      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+    </svg>
 
-              </div>
+    <span>There are 2 public mapped IPs accessible from anywhere on the internet! <a href="https://helpdesk.lgfl.net/support/solutions/folders/54000012914" target="_blank" rel="noopener noreferrer" class="text-decoration-underline link-dark">Find out more</a></span>
+  </div>
+</div>
+
+
+
+
+
             </div>
+                
             <div class="py-2 py-sm-3  col-12 col-sm-6 col-md-6 col-lg-12 card">
               <div class="row align-items-center">
                 <div class="col-12 col-lg-3 d-flex justify-content-center mb-1 mb-sm-2 mb-lg-0">
@@ -584,6 +600,15 @@
                   <a href="/secure/user/nc/user_report.aspx?rtype=23" class="link-dark">Review Non-MIS USO Accounts</a>
                 </div>
               </div>
+               <div class="collapse" id="alertsBox">
+  <div class="alert alert-warning fade show mt-2 mb-0 p-1 d-flex align-items-center small fw-normal lh-sm" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" fill="#b8860b" class="bi bi-exclamation-triangle me-2" viewBox="0 0 16 16">
+      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"></path>
+      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+    </svg>
+    <span>There are 2 non MIS USO accounts that haven’t been logged into for over 6 months! <a href="https://helpdesk.lgfl.net/support/solutions/articles/54000059985" target="_blank" rel="noopener noreferrer" class="text-decoration-underline link-dark">Find out more</a></span>
+  </div>
+</div>
             </div>
             <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
               <div class="row align-items-center">
@@ -598,6 +623,15 @@
                   <a href="/secure/user/au/au_settings.aspx" class="link-dark">Manage AutoUpdate</a>
                 </div>
               </div>
+                 <div class="collapse" id="alertsBox">
+  <div class="alert alert-warning fade show mt-2 mb-0 p-1 d-flex align-items-center small fw-normal lh-sm" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" fill="#b8860b" class="bi bi-exclamation-triangle me-2" viewBox="0 0 16 16">
+      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"></path>
+      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+    </svg>
+    <span>The last MIS-USO sync was more than two weeks ago! <a href="https://helpdesk.lgfl.net/support/solutions/articles/54000059985" target="_blank" rel="noopener noreferrer" class="text-decoration-underline link-dark">Find out more</a></span>
+  </div>
+</div>
             </div>
             <div class="py-2 py-sm-3 col-12 col-sm-6 col-md-6 col-lg-12 card">
               <div class="row align-items-center">
@@ -622,6 +656,15 @@
                   <a href="/secure/user/nc/user_report.aspx?rtype=24" class="link-dark">Review Remote Access</a>
                 </div>
               </div>
+                 <div class="collapse" id="alertsBox">
+  <div class="alert alert-warning fade show mt-2 mb-0 p-1 d-flex align-items-center small fw-normal lh-sm" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" fill="#b8860b" class="bi bi-exclamation-triangle me-2" viewBox="0 0 16 16">
+      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"></path>
+      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+    </svg>
+    <span>Remote access is in use, but MIS data is not being synced to USO! <a href="https://helpdesk.lgfl.net/support/solutions/articles/54000059985" target="_blank" rel="noopener noreferrer" class="text-decoration-underline link-dark">Find out more</a></span>
+  </div>
+</div>
             </div>
             <div class="py-2 py-sm-3  col-12 col-sm-6 col-md-6 col-lg-12 card">
               <div class="row align-items-center">
@@ -634,6 +677,15 @@
                   <a href="/secure/email/lgfl/inactive.aspx" class="link-dark">Review Inactive Mailboxes</a>
                 </div>
               </div>
+                  <div class="collapse" id="alertsBox">
+  <div class="alert alert-warning fade show mt-2 mb-0 p-1 d-flex align-items-center small fw-normal lh-sm" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" fill="#b8860b" class="bi bi-exclamation-triangle me-2" viewBox="0 0 16 16">
+      <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"></path>
+      <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+    </svg>
+    <span>StaffMail is in use, but MIS data is not being synced to USO! <a href="https://helpdesk.lgfl.net/support/solutions/articles/54000059985" target="_blank" rel="noopener noreferrer" class="text-decoration-underline link-dark">Find out more</a></span>
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -694,7 +746,7 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-4">
+        <div class="mb-3">
           <p class="fw-light">The following pages are designed to help you keep your school's USO user accounts accurate, manage Nominated Contacts, ensure all users are correctly synced with your MIS, and carry out other key account management tasks.</p>
         </div>
         <div class="accordion" id="usoAccordion">
@@ -813,7 +865,7 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-4">
+        <div class="mb-3">
           <p class="fw-light">The following pages are designed to help you manage your school's internet filtering settings, ensure age-appropriate access for all users, apply safeguarding policies effectively, and carry out other key filtering and online safety tasks.</p>
         </div>
         <div class="accordion" id="FilteringAccordion">
@@ -825,14 +877,18 @@
                   <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7.3 7.3 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.3 7.3 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56z"/>
                   <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
                 </svg>
-                Manage SchoolProtect
+                SchoolProtect - Filtering in School
               </button>
             </h2>
             <div id="filtering1" class="accordion-collapse collapse" data-bs-parent="#FilteringAccordion">
               <div class="accordion-body">
-                Control and update your SchoolProtect settings, including administrator access permissions and authorized contacts who can manage your school's filtering system. This ensures that only appropriate staff members have access to modify protection settings.
+                The SchoolProtect management portal is designed specifically for schools, making the job of setting up, managing and reviewing filtering straight-forward for schools.
                 <div class="mt-2">
-                  <a href="https://support.lgfl.org.uk/secure/user/ncreq/manage_nc.aspx" class="btn btn-outline-dark btn-sm">Manage SchoolProtect</a>
+                  <a href="https://schoolprotect.lgfl.org.uk/secure/account/signin?type=Shibboleth&returnUrl=/secure/home" target="_blank" class="btn btn-outline-dark btn-sm mb-2 me-2">Administer SchoolProtect</a>   
+                  <a href="https://schoolprotect.lgfl.org.uk/secure/account/signin?type=Shibboleth&returnUrl=/secure/report/dashboard" target="_blank" class="btn btn-outline-dark btn-sm mb-2 me-2">View Filtering Dashboard <span class="badge bg-danger ms-1">NEW</span></a>
+                  <a href="#" class="btn btn-outline-dark btn-sm mb-2 me-2 disabled">Manage SchoolProtect Permissions <span class="badge bg-secondary ms-1">COMING SOON</span></a> 
+                   <a href="#" class="btn btn-outline-dark btn-sm mb-2 me-2 disabled">Filtering Health Check <span class="badge bg-secondary ms-1">COMING SOON</span></a> 
+
                 </div>
               </div>
             </div>
@@ -845,41 +901,22 @@
                   <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"/>
                   <path d="M10 13a1 1 0 0 1 1-1v-1a2 2 0 0 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1z"/>
                 </svg>
-                Manage HomeProtect  
+                HomeProtect - Filtering at Home
               </button>
             </h2>
             <div id="filtering2" class="accordion-collapse collapse" data-bs-parent="#FilteringAccordion">
               <div class="accordion-body">
-                Configure and maintain your HomeProtect settings to ensure adequate internet safety when students access resources from home. Manage user accounts, reset passwords, and update profile details to maintain appropriate filtering levels outside of school.
+                Configure and maintain your HomeProtect settings to ensure appropriate filtering when students access resources from home.
                 <div class="mt-2">
-                  <a href="https://support.lgfl.org.uk/secure/user/user_view.aspx" class="btn btn-outline-dark btn-sm">Manage HomeProtect</a>
+                  <a href="https://webadmin.safehomeschool.net/webadmin/start" target="_blank" class="btn btn-outline-dark btn-sm">Manage HomeProtect</a>
+                  <a href="https://homeprotect.lgfl.net/" target="_blank" class="btn btn-outline-dark btn-sm">Find Out More</a>
+
+                  
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="accordion-item mb-2">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#filtering3" aria-expanded="false" style="font-weight: 500;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-clipboard-check me-2" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                </svg>
-                View Filtering MOT
-              </button>
-            </h2>
-            <div id="filtering3" class="accordion-collapse collapse" data-bs-parent="#FilteringAccordion">
-              <div class="accordion-body">
-                Review your school's filtering health check (MOT) report to ensure all filtering systems are working properly. This comprehensive assessment helps identify potential gaps in your protection setup and provides recommendations for maintaining optimal filtering performance.
-                <div class="mt-2">
-                  <a href="https://support.lgfl.org.uk/secure/user/au/au_settings.aspx" class="btn btn-outline-dark btn-sm">View Filtering MOT</a> 
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+  
           <div class="accordion-item mb-2">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#filtering4" aria-expanded="false" style="font-weight: 500;">
@@ -891,34 +928,25 @@
             </h2>
             <div id="filtering4" class="accordion-collapse collapse" data-bs-parent="#FilteringAccordion">
               <div class="accordion-body">
-                Perform regular audits of your filtering system to verify that all safeguarding measures are working correctly. Run tests on blocked and allowed content, review filter categories, and ensure all user groups have appropriate access levels based on age and requirements.
+                To comply with Keeping Children Safe in Education and the DfE Standards for Filtering and Monitoring, schools must perform regular checks. This resource supports those checks by allowing you to verify whether LGfL filtering services are active, review YouTube settings, and check if key content categories are blocked or permitted.
                 <div class="mt-2">
-                  <a href="https://support.lgfl.org.uk/secure/user/nc/user_report.aspx?rtype=23" class="btn btn-outline-dark btn-sm">Carry Out Filtering Checks</a>
+                  <a href="https://amifiltering.co.uk" target="_blank" class="btn btn-outline-dark btn-sm">Carry Out Filtering Checks</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="accordion-item mb-2">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#filtering5" aria-expanded="false" style="font-weight: 500;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-lock me-2" viewBox="0 0 16 16">
-                  <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 5.996V14H3s-1 0-1-1 1-4 6-4c.564 0 1.077.038 1.544.107a4.524 4.524 0 0 0-.803.918A10.46 10.46 0 0 0 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h5ZM9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2Zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1Z"/>
-                </svg>
-                Manage Permissions 
-              </button>
-            </h2>
-            <div id="filtering5" class="accordion-collapse collapse" data-bs-parent="#FilteringAccordion">
-              <div class="accordion-body">
-                Configure user permissions and access levels to control what content different user groups can access. Set up role-based filtering profiles, customize access policies for staff and students, and implement special permissions for specific educational needs.
-                <div class="mt-2">
-                  <a href="https://support.lgfl.org.uk/secure/user/au/pwd_policies.aspx" class="btn btn-outline-dark btn-sm">Manage Permissions</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
-        </div> </div>
+        </div> 
+       <p class="my-3">
+  Find out more at 
+  <a href="https://safeguarding.lgfl.net/" target="_blank" rel="noopener noreferrer" class="link-dark">
+    safeguarding.lgfl.net
+  </a>!
+</p>
+      
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
       </div>
@@ -934,7 +962,7 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-4">
+        <div class="mb-3">
           <p class="fw-light">The following options help you maintain robust cyber security for your school by identifying vulnerabilities and implementing security best practices to protect your digital infrastructure and sensitive data.</p>
         </div>
         <div class="accordion" id="CybersecurityAccordion">
@@ -951,7 +979,7 @@
             </h2>
             <div id="cybersec1" class="accordion-collapse collapse" data-bs-parent="#CybersecurityAccordion">
               <div class="accordion-body">
-                Schedule a comprehensive internal network vulnerability assessment to identify potential security weaknesses within your school's infrastructure. Our security experts will scan your internal systems, devices, and applications to detect vulnerabilities that could be exploited by malicious actors, providing you with a detailed report and remediation recommendations.
+                Schedule a free vulnerability assessment of your school's internal network to help assess the resilience of your security controls and identify vulnerabilities that an attacker could exploit.
                 <div class="mt-2">
                   <a href="https://lgfl.net/security/cyberprotect" target="_blank"  class="btn btn-outline-dark btn-sm">Request Internal Vulnerability Scan</a>
                 </div>
@@ -971,7 +999,7 @@
             </h2>
             <div id="cybersec2" class="accordion-collapse collapse" data-bs-parent="#CybersecurityAccordion">
               <div class="accordion-body">
-                Obtain a comprehensive external security assessment that evaluates your school's cybersecurity posture from an outside perspective. This report includes analysis of your external-facing systems, public-facing websites, email security configurations, and potential exposure points. Receive expert recommendations for strengthening your security perimeter and protecting against emerging threats.
+                A free tool that helps schools and MATs identify publicly visible cyber vulnerabilities - such as issues with websites, email settings, and internet-facing systems. By submitting a request, schools receive a tailored report from LGfL's Cybercloud team, highlighting current risks and comparing their security posture to industry averages.
                 <div class="mt-2">
                   <a href="https://lgfl.net/security/security-school-report"  target="_blank" class="btn btn-outline-dark btn-sm">Request External Security Report</a>
                 </div>
@@ -982,23 +1010,33 @@
               <div class="accordion-item mb-2">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#cybersec3" aria-expanded="false" style="font-weight: 500;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bricks me-2" viewBox="0 0 16 16">
-                 <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-clipboard-check me-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                </svg>
                 Request Firewall MOT
               </button>
             </h2>
             <div id="cybersec3" class="accordion-collapse collapse" data-bs-parent="#CybersecurityAccordion">
               <div class="accordion-body">
-                Arrange a comprehensive health check for your school's firewall configuration and security settings. Our experts will review your firewall rules, security policies, and traffic management settings to ensure optimal protection against network threats. The MOT includes verification of proper segmentation, rule optimization recommendations, and identification of potential security gaps in your network's first line of defense.
+                Arrange a comprehensive health check for your school's firewall configuration and security settings. Our experts will review your firewall rules, security policies, and traffic management settings to ensure optimal protection against network threats.
                 <div class="mt-2">
-                  <a href="#" class="btn btn-outline-dark btn-sm">Request Firewall MOT</a>
+                         <a href="#" class="btn btn-outline-dark btn-sm mb-2 me-2 disabled">Request Firewall MOT<span class="badge bg-secondary ms-1">COMING SOON</span></a> 
                 </div>
               </div>
             </div>
           </div>
 
         </div> 
+
+      <p class="my-3">
+  Find out more at 
+  <a href="https://cybersecurity.lgfl.net/" target="_blank" rel="noopener noreferrer" class="link-dark">
+    cybersecurity.lgfl.net
+  </a>!
+</p>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
@@ -1011,12 +1049,12 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header bg-dark text-white">
-        <h1 class="modal-title fs-5" id="NetworkConfigModalLabel">Review Network Configuration</h1>
+        <h1 class="modal-title fs-5" id="NetworkConfigModalLabel">Review Configuration</h1>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-4">
-          <p class="fw-light">The following options allow you to view and manage key network configuration settings for your school, including firewall rules, mail relay settings, IP addresses, and DNS records.</p>
+        <div class="mb-3">
+          <p class="fw-light">The following options allow you to view and manage key configuration settings for your school, including firewall rules, mail relay settings, IP addresses, and DNS records.</p>
         </div>
         <div class="accordion" id="NetworkConfigAccordion">
 
@@ -1025,19 +1063,38 @@
           <div class="accordion-item mb-2">
          <h2 class="accordion-header">
           <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#netconfig1" aria-expanded="false" style="font-weight: 500;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-shield-lock me-2" viewBox="0 0 16 16">
-              <path d="M5.5 8a1.5 1.5 0 0 1 3 0v1.086a1.5 1.5 0 1 1-3 0V8z"/>
-              <path d="M8 0c-.69 0-1.315.136-1.88.382A4.992 4.992 0 0 0 4.61 1.4 5.01 5.01 0 0 0 3.38 3.12 4.992 4.992 0 0 0 3 4.62V8c0 3.905 2.87 5.828 4.297 6.51a.5.5 0 0 0 .406 0C10.13 13.828 13 11.905 13 8V4.62a4.992 4.992 0 0 0-.382-1.5A5.01 5.01 0 0 0 11.39 1.4a4.992 4.992 0 0 0-1.51-1.018A3.99 3.99 0 0 0 8 0zm0 1a3.99 3.99 0 0 1 1.693.367A3.992 3.992 0 0 1 11.632 2.6a3.99 3.99 0 0 1 .768 1.148A3.99 3.99 0 0 1 13 4.62V8c0 3.5-2.637 5.328-4.003 6a.5.5 0 0 1-.494 0C5.637 13.328 3 11.5 3 8V4.62a3.99 3.99 0 0 1 .6-1.248 3.992 3.992 0 0 1 1.148-.768A3.99 3.99 0 0 1 8 1z"/>
-            </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-table me-2" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 2h-4v3h4zm0 4h-4v3h4zm0 4h-4v3h3a1 1 0 0 0 1-1zm-5 3v-3H6v3zm-5 0v-3H1v2a1 1 0 0 0 1 1zm-4-4h4V8H1zm0-4h4V4H1zm5-3v3h4V4zm4 4H6v3h4z"/>
+</svg>
             View Firewall &amp; Mail Relay Rules
           </button>
         </h2>
 
             <div id="netconfig1" class="accordion-collapse collapse" data-bs-parent="#NetworkConfigAccordion">
               <div class="accordion-body">
-                Review your current firewall configuration and mail relay settings to ensure your network security and email systems are properly configured. This page provides a comprehensive view of all active rules, including ports, protocols, and access restrictions in place for your school's network.
+                Review your current firewall configuration and mail relay rules. This page provides a log of all rules, including ports, protocols, and access restrictions in place for your school's network.
                 <div class="mt-2">
                   <a href="http://support.lgfl.org.uk/secure/myacc/lgfl/lgfl2_deploy.aspx?tab=4" class="btn btn-outline-dark btn-sm">View Firewall & Mail Relay Rules</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-2">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#netconfig4" aria-expanded="false" style="font-weight: 500;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-square me-2" viewBox="0 0 16 16">
+                  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg>
+                Update Firewall Rules
+              </button>
+            </h2>
+            <div id="netconfig4" class="accordion-collapse collapse" data-bs-parent="#NetworkConfigAccordion">
+              <div class="accordion-body">
+                   <span class="badge bg-dark text-light mb-2">Coming Soon</span><br>
+                 Easily request changes to your school's firewall configuration through the updated next-gen process. 
+                <div class="mt-2">
+                  <button class="btn btn-outline-secondary btn-sm" disabled>Update Firewall Rules</button>
                 </div>
               </div>
             </div>
@@ -1055,7 +1112,7 @@
             </h2>
             <div id="netconfig2" class="accordion-collapse collapse" data-bs-parent="#NetworkConfigAccordion">
               <div class="accordion-body">
-                Access a complete listing of all IP addresses assigned to your school's network, including public and private ranges. This information is essential for network troubleshooting, setting up new services, and configuring external access to your school's resources.
+                View all IP addresses used by your school’s network and request changes to your subnets.
                 <div class="mt-2">
                   <a href="http://support.lgfl.org.uk/secure/myacc/lgfl/lgfl2_deploy.aspx?tab=3" class="btn btn-outline-dark btn-sm">View IP Addresses</a>
                 </div>
@@ -1066,15 +1123,16 @@
           <div class="accordion-item mb-2">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#netconfig3" aria-expanded="false" style="font-weight: 500;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-diagram-3 me-2" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
-                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-card-list me-2" viewBox="0 0 16 16">
+  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+  <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+</svg>
                 Review DNS Records
               </button>
             </h2>
             <div id="netconfig3" class="accordion-collapse collapse" data-bs-parent="#NetworkConfigAccordion">
               <div class="accordion-body">
-                Examine your school's DNS (Domain Name System) configuration, including A records, CNAME records, MX records, and other DNS entries. Proper DNS configuration is crucial for website hosting, email delivery, and other network services that rely on domain name resolution.
+                View your school's DNS settings, including A, CNAME, MX, and other records. You can also request changes, like removing outdated entries.
                 <div class="mt-2">
                   <a href="http://support.lgfl.org.uk/secure/support/dns.aspx" class="btn btn-outline-dark btn-sm">Review DNS Records</a>
                 </div>
@@ -1082,22 +1140,25 @@
             </div>
           </div>
 
+          
+
+          
           <div class="accordion-item mb-2">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#netconfig4" aria-expanded="false" style="font-weight: 500;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil-square me-2" viewBox="0 0 16 16">
-                  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                </svg>
-                Update Firewall Rules
+              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#netconfig5" aria-expanded="false" style="font-weight: 500;">
+           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bar-chart-line me-2" viewBox="0 0 16 16">
+  <path d="M0 0h1v15h15v1H0V0z"/>
+  <path d="M10 10h1v3h-1v-3zM7 6h1v7H7V6zM4 9h1v4H4V9zM13 4h1v9h-1V4z"/>
+</svg>
+
+                View Connection Usage Graphs
               </button>
             </h2>
-            <div id="netconfig4" class="accordion-collapse collapse" data-bs-parent="#NetworkConfigAccordion">
+            <div id="netconfig5" class="accordion-collapse collapse" data-bs-parent="#NetworkConfigAccordion">
               <div class="accordion-body">
-                   <span class="badge bg-warning text-dark mb-2">Coming Soon</span>
-                  Request changes to your school's firewall configuration including opening specific ports, allowing access to educational services, and modifying security policies to meet your evolving needs.
+                 View detailed graphs of your school's internet connection, including incoming and outgoing bandwidth usage, and identify peak activity times.
                 <div class="mt-2">
-                  <button class="btn btn-outline-secondary btn-sm" disabled>Update Firewall Rules</button>
+                 <a href="https://support.lgfl.org.uk/secure/status/usage/status_trend.aspx" class="btn btn-outline-dark btn-sm">View Usage Graphs</a>
                 </div>
               </div>
             </div>
@@ -1112,33 +1173,33 @@
   </div>
 </div>
 
-<div class="modal fade" id="LearningResourcesModal" tabindex="-1" aria-labelledby="LearningResourcesModalLabel" aria-hidden="true">
+<div class="modal fade" id="TrainingModal" tabindex="-1" aria-labelledby="TrainingModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header bg-dark text-white">
-        <h1 class="modal-title fs-5" id="LearningResourcesModalLabel">Learning & Training Resources</h1>
+        <h1 class="modal-title fs-5" id="TrainingModalLabel">Explore LGfL CPD & Training</h1>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="mb-4">
-          <p class="fw-light">Discover valuable learning materials and request personalised training sessions to make the most of your resources.</p>
+          <p class="fw-light">Explore LGfL training and events on topics ranging from teaching and safeguarding to technology.</p>
         </div>
-        <div class="accordion" id="LearningResourcesAccordion">
+        <div class="accordion" id="TrainingAccordion">
 
       <div class="accordion-item mb-2">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#learningResource1" aria-expanded="false" style="font-weight: 500;">
+              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#Training1" aria-expanded="false" style="font-weight: 500;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search me-2" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
-                Explore Our Free Open Access Learning Resources
+                Explore LGfL CPD & Training
               </button>
             </h2>
-            <div id="learningResource1" class="accordion-collapse collapse" data-bs-parent="#LearningResourcesAccordion">
+            <div id="Training1" class="accordion-collapse collapse" data-bs-parent="#TrainingAccordion">
               <div class="accordion-body">
-                Discover a wide range of free, open access learning materials curated to support educators and students. Enhance your teaching and learning experiences with these valuable resources.
+               Browse our range of training and events provided for a range of roles and topics in the education sector. 
                 <div class="mt-2">
-                  <a href="https://content.lgfl.net/" class="btn btn-outline-dark btn-sm" target="_blank">Explore Learning Resources</a>
+                  <a href="https://training.lgfl.net/" class="btn btn-outline-dark btn-sm" target="_blank">Explore Training</a>
                 </div>
               </div>
             </div>
@@ -1146,18 +1207,18 @@
 
           <div class="accordion-item mb-2">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#learningResource2" aria-expanded="false" style="font-weight: 500;">
+              <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#Training2" aria-expanded="false" style="font-weight: 500;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-calendar2-event me-2" viewBox="0 0 16 16">
                   <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
                   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
                   <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
                 </svg>
-                Request a Free Training Session From Your Learning Resource Consultant
+                Request Free Support From Your Learning Resource Consultant
               </button>
             </h2>
-            <div id="learningResource2" class="accordion-collapse collapse" data-bs-parent="#LearningResourcesAccordion">
+            <div id="Training2" class="accordion-collapse collapse" data-bs-parent="#TrainingAccordion">
               <div class="accordion-body">
-                Get personalised support and guidance by requesting a free training session with one of our Learning Resource Consultants. They can help you effectively integrate resources into your curriculum and maximize their impact.
+                Get personalised support and guidance by requesting a free training session with one of our Learning Resource Consultants. They can help you effectively integrate resources into your curriculum and maximise their impact.
                 <div class="mt-2">
                   <a href="https://landing.lgfl.net/training_support" class="btn btn-outline-dark btn-sm" target="_blank">Request Training Session</a>
                 </div>
